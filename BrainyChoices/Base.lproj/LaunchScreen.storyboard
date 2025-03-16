@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="hDV-2r-SpX" userLabel="LaunchScreenBackgroundImage">
+                                <rect key="frame" x="-34" y="0.0" width="427" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="L73-FM-GDd" userLabel="LogoImage">
+                                <rect key="frame" x="81.666666666666686" y="311" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="AIv-cw-fKw"/>
+                                    <constraint firstAttribute="width" constant="230" id="tEW-ju-L6g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ts3-Gj-oSh">
+                                <rect key="frame" x="89" y="546" width="215.33333333333337" height="75"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Developed by : Deepanshu Bajaj">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="BradleyHandITCTT-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hDV-2r-SpX" secondAttribute="bottom" id="3iH-bd-eqx"/>
+                            <constraint firstItem="Ts3-Gj-oSh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8XA-3T-sR0"/>
+                            <constraint firstItem="hDV-2r-SpX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-50" id="8t9-ut-0fk"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ClP-TH-8le"/>
+                            <constraint firstItem="L73-FM-GDd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O8G-N4-uEI"/>
+                            <constraint firstItem="hDV-2r-SpX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="eLQ-Pe-ISg"/>
+                            <constraint firstItem="Ts3-Gj-oSh" firstAttribute="top" secondItem="L73-FM-GDd" secondAttribute="bottom" constant="5" id="mHm-Hs-0qx"/>
+                            <constraint firstItem="Ts3-Gj-oSh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xKY-xl-oje"/>
+                            <constraint firstAttribute="trailing" secondItem="hDV-2r-SpX" secondAttribute="trailing" id="yWy-WO-HiV"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ts3-Gj-oSh" secondAttribute="trailing" id="yZG-ah-y7m"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreenBackgroundImage" width="650" height="800"/>
+        <image name="LogoImage" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
